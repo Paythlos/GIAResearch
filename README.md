@@ -1,3 +1,3 @@
 # GIAResearch
+Interaccion radiacion-materia entre luz UV-Visible proveniente del sol y un anodo de una celda fotoelectroquimica, buscando simular los efectos del semiconductor donde una curva I-V es deseada, luego usando estos voltajes generados en un modelo de una celda electroquimica se determinara la generacion de especies oxigeno-activas.
 
-Radiation-matter interaction between UV-Visible light coming from the sun and an anode from a photoelectrochemical cell, looking to simulate the semiconductor effects where the I-V curve is desired, next plug that voltage into an electrochemical model to determine the generation of oxigen-active species.
