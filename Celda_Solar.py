@@ -13,8 +13,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Region heterounion pn, unidades en cm
-L = 1e-4    #Longitud de la celda
-x = np.concatenate((np.linspace(0,0.2e-4,100,endpoint=False),(np.linspace(0.2e-4, L, 50))))
+L = 3e-4    #Longitud de la celda
+x = np.concatenate((np.linspace(0,1e-4,100,endpoint=False),(np.linspace(1e-4, L, 50))))
 
 #Creacion de la malla con Sesame
 sys = sesame.Builder(x)
@@ -72,7 +72,15 @@ j = j * sys.scaling.current #Da unidades de corriente en voltios
 
 #Graficos
 plt.plot(voltages, j, '-o')
-plt.xlabel('Voltage [V]')
-plt.ylabel('Current [A/cm^2]')
+plt.title('Curva I-V')
+plt.xlabel('Voltaje [V]')
+plt.ylabel('Densidad de Corriente [A/cm^2]')
 plt.grid()      # Agrega reticula
 plt.show()      # Muestra la figura
+
+#Bandas de Energia 
+sys, result = sesame.load_sim('1dhomo_V_0.gzip')  # load data file
+az = sesame.Analyzer(sys,result)                   # get Sesame analyzer object
+p1 = (0,0)
+p2 = (3e-4,0)
+az.band_diagram((p1,p2))                           # plot band diagram along line from p1 to p2
