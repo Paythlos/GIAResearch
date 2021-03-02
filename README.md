@@ -14,6 +14,6 @@ El paquete que se usara es el de [Sesame](https://sesame.readthedocs.io/en/lates
   8. tau_e: Tiempo de vida de los electrones en el bulk
   9. tau_h: Tiempo de vida de los huecos en el bulk
 
-Con esto se simula el material semiconductor, para generar las curvas I-V:
+El codigo generara unos archivos .gzip que son los que contienen los datos numericos de la simulacion, estos se pueden cargar para generar diferentes resultados como la bandas de energias. Con esto se simula el material semiconductor, para generar las curvas I-V:
 
 ![Alt text](https://github.com/Paythlos/GIAResearch/blob/main/images/IV.png)
