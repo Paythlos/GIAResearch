@@ -13,8 +13,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Region homounion pn, unidades en cm
-L = 3e-3    #Longitud de la celda
-x = np.concatenate((np.linspace(0,1.5e-3,100,endpoint=False),(np.linspace(1.5e-3, L, 50))))
+L = 0.1e-3    #Longitud de la celda
+x = np.concatenate((np.linspace(0,0.05e-3,100,endpoint=False),(np.linspace(0.05e-3, L, 50))))
 T = 293.15  #Temperatura del sistema
 DEC = ((T/300.)**(3./2.))*2.8e19     #Calculo de Nc dependiente de la temperatura
 DEV = ((T/300.)**(3./2.))*1.04e19     #Calculo de Nv dependiente de la temperatura
@@ -82,8 +82,8 @@ plt.grid()      # Agrega reticula
 plt.show()      # Muestra la figura
 
 #Bandas de Energia 
-# sys, result = sesame.load_sim('1dhomo_V_0.gzip')  # load data file
-# az = sesame.Analyzer(sys,result)                   # get Sesame analyzer object
-# p1 = (0,0)
-# p2 = (3e-4,0)
-# az.band_diagram((p1,p2))                           # plot band diagram along line from p1 to p2
+sys, result = sesame.load_sim('1dhomo_V_0.gzip')  # load data file
+az = sesame.Analyzer(sys,result)                   # get Sesame analyzer object
+p1 = (0,0)
+p2 = (0.1e-3,0)
+az.band_diagram((p1,p2))                           # plot band diagram along line from p1 to p2
