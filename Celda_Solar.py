@@ -13,19 +13,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #Region homounion pn, unidades en cm
-L = 0.1e-3    #Longitud de la celda
+L = 0.1e-3    #Longitud de la celda en cm
 x = np.concatenate((np.linspace(0,0.05e-3,100,endpoint=False),(np.linspace(0.05e-3, L, 50))))
 T = 293.15  #Temperatura del sistema
-DEC = ((T/300.)**(3./2.))*2.8e19     #Calculo de Nc dependiente de la temperatura
-DEV = ((T/300.)**(3./2.))*1.04e19     #Calculo de Nv dependiente de la temperatura
+#DEC = ((T/300.)**(3./2.))*2.8e19     #Calculo de Nc dependiente de la temperatura Silicio
+#DEV = ((T/300.)**(3./2.))*1.04e19     #Calculo de Nv dependiente de la temperatura Silicio
+DEC = 1
+DEV = 1
 
 #Creacion de la malla con Sesame
 sys = sesame.Builder(x)
 
 ####################################################################################################
-#Detalles del material
+#Detalles del material Silicio
+#material = {'Nc':DEC, 'Nv':DEV, 'Eg':1.12, 'affinity':4.05, 'epsilon':11.7,
+ #       'mu_e':1450, 'mu_h':500, 'Et':0, 'tau_e':10e-6, 'tau_h':10e-6, 'Et':0}
+
+#Detalles del material TiO2
 material = {'Nc':DEC, 'Nv':DEV, 'Eg':1.12, 'affinity':4.05, 'epsilon':11.7,
-        'mu_e':1450, 'mu_h':500, 'Et':0, 'tau_e':10e-6, 'tau_h':10e-6, 'Et':0}
+         'mu_e':1450, 'mu_h':500, 'Et':0, 'tau_e':10e-6, 'tau_h':10e-6, 'Et':0}
 
 sys.add_material(material)
 
@@ -58,7 +64,7 @@ sys.contact_S(Sn_left, Sp_left, Sn_right, Sp_right)
 ######################################################################################################
 #Definicion de elementos luminicos
 phi = 3.12e16       # flujo de fotones [1/(cm^2 s)]
-alpha = 2.3e4    # coeficiente de absorcion [1/cm]
+alpha = 2.3e4    # coeficiente de absorcion [1/cm] #Silicio
 
 # Definicion de la funcion de tasa de generacion dependiente de la profundidad de penetracion de la luz
 # en el seminconductor, en este caso es un decaimiento exponencial
