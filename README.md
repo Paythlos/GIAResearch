@@ -22,3 +22,14 @@ El codigo generara unos archivos .gzip que son los que contienen los datos numer
 Para la parte de procesos electroquimicos, por ahora hay una [primera documentacion por revisar](https://pubs.rsc.org/en/content/chapterhtml/2018/bk9781782625551-00001?isbn=978-1-78262-555-1&sercode=bk) donde muestran las interacciones en la superficie y su conexion con el modelo de semiconductores.
 
 Las propiedades del TiO2 encontradas para la simulacion son:
+  1. Band Gap: 2.95-3 eV
+  2. Nc (aun por definir bien): me* = 2.2 / me* = 0.083
+  3. Nv (aun por definir bien): mh* = 0.171
+  4. Epsilon = 86 perpendicular al eje optico/170 paralelo al eje optico
+  5. Movilidad de e: 0.1 - 10 cm^2/Vs
+  6. movilidad de h: ??
+  7. Et: 0
+  8. tau_e: 100 - 1000 ns
+  9. tau_h: 100 - 1000 ns
+  10. Afinidad electronica: 4.9
+  11. alpha: #x10^5
