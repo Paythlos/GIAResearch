@@ -22,14 +22,21 @@ El codigo generara unos archivos .gzip que son los que contienen los datos numer
 Para la parte de procesos electroquimicos, por ahora hay una [primera documentacion por revisar](https://pubs.rsc.org/en/content/chapterhtml/2018/bk9781782625551-00001?isbn=978-1-78262-555-1&sercode=bk) donde muestran las interacciones en la superficie y su conexion con el modelo de semiconductores.
 
 Las propiedades del TiO2 encontradas para la simulacion son:
-  1. Band Gap: 2.95-3 eV
-  2. Nc (aun por definir bien): me* = 2.2 / me* = 0.083
-  3. Nv (aun por definir bien): mh* = 0.171
-  4. Epsilon = 86 perpendicular al eje optico/170 paralelo al eje optico
-  5. Movilidad de e: 0.1 - 10 cm^2/Vs
-  6. movilidad de h: ??
+  1. Band Gap: 2.95-3 eV [1]
+  2. Nc (aun por definir bien): me* = 2.2 / me* = 0.083 [2]
+  3. Nv (aun por definir bien): mh* = 0.171 [2]
+  4. Epsilon = 86 perpendicular al eje optico/170 paralelo al eje optico [2][3]
+  5. Movilidad de e: 0.1 - 10 cm^2/Vs [2]
+  6. movilidad de h: ?? [2]
   7. Et: 0
-  8. tau_e: 100 - 1000 ns
-  9. tau_h: 100 - 1000 ns
-  10. Afinidad electronica: 4.9
-  11. alpha: #x10^5
+  8. tau_e: 100 - 1000 ns [4]
+  9. tau_h: 100 - 1000 ns [4]
+  10. Afinidad electronica: 4.9 [4]
+  11. alpha: #x10^5 
+
+Referencias para los datos de los materiales:
+1.	Hossain, F. M., Sheppard, L., Nowotny, J., & Murch, G. E. (2008). Optical properties of anatase and rutile titanium dioxide: Ab initio calculations for pure and anion-doped material. Journal of Physics and Chemistry of Solids, 69(7), 1820–1828. doi: 10.1016/j.jpcs.2008.01.017
+2.	Bally, A. (1999). Electronic properties of nano-crystalline titanium dioxide thin films. 2094, 140. http://biblion.epfl.ch/EPFL/theses/1999/2094/EPFL_TH2094.pdf
+3.	Matweb
+4.	Blanca Argentina, B. (2015). “Estudio de las propiedades del TiO 2 modificado como soporte de reacciones catalíticas” CECILIA INÉS NORA MORGADE.
+
