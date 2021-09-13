@@ -21,7 +21,7 @@ El codigo generara unos archivos .gzip que son los que contienen los datos numer
 
 Para la parte de procesos electroquimicos, por ahora hay una [primera documentacion por revisar](https://pubs.rsc.org/en/content/chapterhtml/2018/bk9781782625551-00001?isbn=978-1-78262-555-1&sercode=bk) donde muestran las interacciones en la superficie y su conexion con el modelo de semiconductores.
 
-Las propiedades del TiO2 encontradas para la simulacion son:
+Las propiedades del TiO2 Rutilo encontradas para la simulacion son:
   1. Band Gap: 2.95-3 eV [1]
   2. Nc (aun por definir bien): me* = 2.2 / me* = 0.083 [2]
   3. Nv (aun por definir bien): mh* = 0.171 [2]
