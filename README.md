@@ -33,7 +33,7 @@ Las propiedades del TiO2 Rutilo encontradas para la simulacion son:
   9. tau_h: 100 - 1000 ns [4]
   10. Afinidad electronica: 4.9 [4]
   11. alpha: #x10^5 
-  12. Densidad de donadores: 9.2x10^18 cm^-3 [5]
+  12. Densidad de donadores (huecos): 9.2x10^18 cm^-3 [5]
 
 Referencias para los datos de los materiales:
 1.	Hossain, F. M., Sheppard, L., Nowotny, J., & Murch, G. E. (2008). Optical properties of anatase and rutile titanium dioxide: Ab initio calculations for pure and anion-doped material. Journal of Physics and Chemistry of Solids, 69(7), 1820–1828. doi: 10.1016/j.jpcs.2008.01.017
