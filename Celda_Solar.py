@@ -97,7 +97,7 @@ j = j * sys.scaling.current #Da unidades de corriente en voltios
 # plt.ylabel('Densidad de Corriente [mA/cm^2]')
 # plt.grid()      # Agrega reticula
 # plt.show()      # Muestra la figura
-# np.savetxt('jv_values215.txt', np.column_stack((voltages, j)))
+# np.savetxt('curvas\jv_values215.txt', np.column_stack((voltages, j)))
 
 
 #Bandas de Energia
