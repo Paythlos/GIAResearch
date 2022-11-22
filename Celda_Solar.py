@@ -75,7 +75,7 @@ sys.contact_S(Sn_left, Sp_left, Sn_right, Sp_right)
 
 #Definicion de elementos luminicos en el TiO2
 phi = 3.12e16      # flujo de fotones [1/(cm^2 s)]
-alpha = 13534.7  # coeficiente de absorcion [1/cm]
+alpha = 71812.1  # coeficiente de absorcion [1/cm]
 #alpha = 4.94e-3
 # Definicion de la funcion de tasa de generacion dependiente de la profundidad de penetracion de la luz
 # en el seminconductor, en este caso es un decaimiento exponencial
@@ -97,7 +97,7 @@ j = j * sys.scaling.current #Da unidades de corriente en voltios
 # plt.ylabel('Densidad de Corriente [mA/cm^2]')
 # plt.grid()      # Agrega reticula
 # plt.show()      # Muestra la figura
-# np.savetxt('curvas\jv_values215.txt', np.column_stack((voltages, j)))
+np.savetxt(r'C:\Users\payth\OneDrive\Documents\Photoelectrocatalysis\Celda Solar\GIAResearch\curvas\jv_values300.txt', np.column_stack((voltages, j)))
 
 
 #Bandas de Energia
