@@ -74,8 +74,8 @@ sys.contact_S(Sn_left, Sp_left, Sn_right, Sp_right)
 # alpha = 2.3e4    # coeficiente de absorcion [1/cm]
 
 #Definicion de elementos luminicos en el TiO2
-phi = 3.12e16      # flujo de fotones [1/(cm^2 s)]
-alpha = 71812.1  # coeficiente de absorcion [1/cm]
+phi = 3.12e16      # flujo de fotones [1/(cm^2 s)] #Cambiar a flujo necesario
+alpha = 21484.7  # coeficiente de absorcion [1/cm]
 #alpha = 4.94e-3
 # Definicion de la funcion de tasa de generacion dependiente de la profundidad de penetracion de la luz
 # en el seminconductor, en este caso es un decaimiento exponencial
@@ -86,7 +86,7 @@ sys.generation(gfcn)
 
 #####################################################################################################
 #Generacion de voltajes iniciales bias
-voltages = np.linspace(0, 1.95, 50) #Genera los voltajes
+voltages = np.linspace(0, 1.95, 50) #Genera los voltajes #0.1, 0.7, 1.3 - Originales 0 a 1.95
 j = sesame.IVcurve(sys, voltages, '1dhomo_V') #Guarda los datos de las corriente adimensionales
 j = j * sys.scaling.current #Da unidades de corriente en voltios
 
@@ -97,7 +97,7 @@ j = j * sys.scaling.current #Da unidades de corriente en voltios
 # plt.ylabel('Densidad de Corriente [mA/cm^2]')
 # plt.grid()      # Agrega reticula
 # plt.show()      # Muestra la figura
-np.savetxt(r'C:\Users\payth\OneDrive\Documents\Photoelectrocatalysis\Celda Solar\GIAResearch\curvas\jv_values300.txt', np.column_stack((voltages, j)))
+np.savetxt(r'C:\Users\payth\OneDrive\Documents\Photoelectrocatalysis\Celda Solar\GIAResearch\curvas\jv_values500.txt', np.column_stack((j)))
 
 
 #Bandas de Energia
